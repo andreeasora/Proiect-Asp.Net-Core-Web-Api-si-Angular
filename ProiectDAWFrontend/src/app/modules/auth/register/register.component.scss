@@ -1,0 +1,27 @@
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+.form
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+
+#first-name, #last-name, #email, #password
+{
+    border-radius: 8px;
+    width: 50vh;
+}

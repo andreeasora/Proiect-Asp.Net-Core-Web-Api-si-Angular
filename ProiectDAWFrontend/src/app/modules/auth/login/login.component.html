@@ -1,0 +1,15 @@
+<div class = "container">
+    <div class="titlu">
+        <h2>Bine ai revenit!</h2>
+    </div>
+    <form [formGroup] = "profileForm" class = "form">
+       <label for = "email">Email: </label>
+       <input id = "mail" type = "text" formControlName = "username">
+       <br>
+       <label for = "parola">Parola: </label>
+       <input id = "parola" type = "password" formControlName = "password">
+       <br>
+       <div class = "alert alert-danger" *ngIf = "error" >{{error}}</div>
+       <button class = "btn btn-primary" (click) = "login()">Login</button>
+    </form>
+</div>

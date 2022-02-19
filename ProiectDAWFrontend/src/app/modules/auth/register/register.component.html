@@ -1,0 +1,25 @@
+<div class = "container">
+    <div class = "titlu">
+        <h2>Bun venit!</h2>
+    </div>
+    <p>Daca ai deja un cont, apasa butonul de mai jos:</p>
+    <button class = "btn btn-info" (click) = "catreLogin()">Catre Login</button>
+    <br>
+    <p>Daca nu ai un cont, completeaza campurile de mai jos si creaza unul!</p>
+    <form [formGroup] = "profileForm" class = "form">
+        <label for = "nume">Nume: </label>
+        <input id = "first-name" type = "text" formControlName = "nume">
+        <br>
+        <label for = "prenume">Prenume: </label>
+        <input id = "last-name" type = "text" formControlName = "prenume">
+        <br>
+        <label for = "mail">Email: </label>
+        <input id = "email" type = "text" formControlName = "username">
+        <br>
+        <label for = "parola">Parola: </label>
+        <input id = "password" type = "password" formControlName = "password">
+        <br>
+    </form>
+    <div class = "alert alert-danger" *ngIf = "error" >{{error}}</div>
+    <button class = "btn btn-success" (click) = "register()">Register</button>
+</div>

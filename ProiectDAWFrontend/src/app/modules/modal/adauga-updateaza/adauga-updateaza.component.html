@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="title">
+      Completeaza campurile de mai jos
+    </h1>
+  
+    <form [formGroup]="ClientForm" class="form">
+      <mat-form-field appearance="outline">
+        <mat-label>Id</mat-label>
+        <input matInput placeholder="Id" formControlName="id" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Nume</mat-label>
+        <input matInput placeholder="Nume" formControlName="nume" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Telefon</mat-label>
+        <input matInput placeholder="Telefon" formControlName="telefon" />
+      </mat-form-field>
+    </form>
+  
+    <button mat-raised-button (click) = "!data ? adauga() : updateaza()">
+      Salveaza
+    </button>
+  </div>
+  
