@@ -6,7 +6,7 @@ Many); Folosirea metodelor din Linq: GroupBy, Where; Folosirea Join si Include
 3. Autentificare + Roluri; Autorizare pe endpointuri în funcție de Roluri; Cel putin 2
 Roluri: Admin, User
 4. Sa se foloseasca repository pattern/unit of work
-#Cerinte Frontend:
+# Cerinte Frontend:
 1. Cel putin 3 componente; Cel putin 2 module pe langa app.module, router.module
 (cele deja existente la generarea proiectului); Existența unor rute accesibile în funcție
 de rolul userului; Existența unor rute cu id ca parametru;
